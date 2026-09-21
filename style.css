@@ -1,0 +1,176 @@
+/* ==========================================
+   1. ELEMENT SELECTOR (Jenis Selector 1)
+   ================================---------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fce8f3; /* Soft Pink untuk latar belakang halaman */
+    color: #1b263b;            /* Navy untuk teks utama */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #1b263b;            /* Navy */
+    text-align: center;
+}
+
+h2 {
+    color: #1d3557;            /* Soft Blue tua untuk sub-judul */
+    border-bottom: 2px solid #4ea8de;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #1d3557;            /* Soft Blue tua */
+}
+
+p, ul, ol {
+    color: #2b2d42;            /* Teks abu tua */
+}
+
+hr {
+    border: 0;
+    border-top: 2px dashed #4ea8de; /* Garis pemisah Soft Blue */
+    margin: 25px 0;
+}
+
+/* ==========================================
+   2. ID SELECTOR (Jenis Selector 2)
+   ================================---------- */
+#main-container {
+    background-color: #ffffff;
+    border-top: 5px solid #4ea8de;
+}
+
+
+/* ==========================================
+   3. CLASS SELECTOR (Jenis Selector 3)
+   ================================---------- */
+
+/* Menerapkan BOX MODEL & FLEXBOX pada Navigasi */
+nav {
+    display: flex;                  /* Menerapkan FLEXBOX */
+    justify-content: center;        /* Posisi menu di tengah */
+    gap: 15px;                      /* Jarak antar menu */
+    background-color: #1b263b;      /* Navy */
+    padding: 12px 20px;             /* Box Model: padding dalam */
+    border-radius: 8px;             /* Box Model: sudut tumpul */
+    margin: 15px 0;                 /* Box Model: margin luar */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Box Model: bayangan */
+}
+
+/* Styling teks menu navigasi */
+nav a {
+    color: #4ea8de;                 /* Soft Blue */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* ==========================================
+   4. HOVER EFFECT (Wajib)
+   ================================---------- */
+nav a:hover {
+    background-color: #ff007f;      /* Berubah jadi Pink Fanta saat di-hover */
+    color: #ffffff;
+}
+
+/* Menerapkan Box Model pada area utama (<main> / body pembungkus) */
+main, body > table, article {
+    background-color: #ffffff;
+    padding: 25px;                  /* Box Model: padding */
+    border-radius: 10px;            /* Box Model: sudut melengkung */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Styling Gambar (Foto Profil & Gambar Project/Sertifikat) */
+img {
+    border-radius: 8px;
+    border: 3px solid #4ea8de;      /* Border foto warna Soft Blue */
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling Tabel agar rapi menggunakan konsep Box Model */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+table, th, td {
+    border: 1px solid #4ea8de;      /* Garis tabel Soft Blue */
+}
+
+th, td {
+    padding: 10px 12px;             /* Box Model: padding dalam sel tabel */
+    text-align: left;
+}
+
+th {
+    background-color: #1b263b;      /* Navy */
+    color: #4ea8de;                 /* Soft Blue */
+}
+
+td.label {
+    width: 25%;
+    text-align: right;
+    font-weight: bold;
+    color: #1d3557;
+}
+
+/* Styling Form Inputs (khusus halaman Contact) */
+input[type="text"],
+input[type="email"],
+input[type="nomor telepon"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #4ea8de;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #1b263b;
+    color: #4ea8de;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #ff007f;
+    color: #ffffff;
+}
+
+/* Styling footer di bagian bawah web */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #1b263b;      /* Navy */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer p {
+    color: #4ea8de;                 /* Teks footer Soft Blue */
+    font-size: 0.9rem;
+    margin: 0;
+}
